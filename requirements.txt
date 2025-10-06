@@ -1,0 +1,5 @@
+autogen-agentchat
+autogen-ext
+# "autogen-ext[openai]"
+streamlit>=1.32
+python-dotenv>=1.0.1
