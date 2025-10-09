@@ -18,7 +18,7 @@ class ModelConfig:
     def __init__(self):
         self.openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
         self.groq_api_key: Optional[str] = os.getenv("GROQ_API_KEY")
-        self.default_model: str = "gpt-4o-mini"
+        self.default_model: str = "gpt-4o"
         self.max_tokens: int = 40000
         self.temperature: float = 0.4
 
