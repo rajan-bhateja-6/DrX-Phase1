@@ -3,7 +3,7 @@ from Prompts.idea_enhancer import idea_enhancer_prompt
 from Prompts.technical_solutioning import technical_solutioning_prompt
 from Prompts.market_research_prompt import market_research_prompt, market_questionnaire_prompt
 from Prompts.estimator_agent_prompt import estimator_agent_prompt
-from Prompts.business_analysist_prompt import business_analysist_prompt
+from Prompts.business_analysist_prompt import business_analyst_prompt
 from Prompts.workflow_router_prompt import workflow_router_prompt
 from .search_tools import g4o_search_fn, initialize_client
 from config.model_config import config
@@ -56,7 +56,7 @@ def create_agents():
         name="BusinessAnalyst",
         model_client=model_client,
         description="Runs after the user is happy with the Market Research. It Generates business documents (BRD, SRS, FRD, SOW, RFP) based on the finalized idea and estimates.",
-        system_message=f"""{business_analysist_prompt}"""
+        system_message=f"""{business_analyst_prompt}"""
     )
 
     estimator_agent = AssistantAgent(
