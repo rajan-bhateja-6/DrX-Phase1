@@ -20,7 +20,7 @@ class ModelConfig:
         self.groq_api_key: Optional[str] = os.getenv("GROQ_API_KEY")
         self.default_model: str = "gpt-4o-mini"
         self.max_tokens: int = 40000
-        self.temperature: float = 0.7
+        self.temperature: float = 0.4
 
     def validate_config(self) -> bool:
         """Validate that required configuration is present."""
